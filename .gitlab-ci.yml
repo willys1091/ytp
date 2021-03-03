@@ -1,0 +1,110 @@
+stages:
+  - development
+  - production
+
+variables:
+  project_path: "/home/deploy/application/tangan_pengharapan"
+  project_name: "website"
+  prod_repository: "git@gitlab.com:yayasan-tangan-pengaharapan/website.git"
+  prod_releases_dir: "/home/deploy/tangan_pengharapan/application/releases"
+  prod_app_dir: "/home/deploy/tangan_pengharapan/application"
+  prod_release: $(date +%d%m%Y%H%M%S)
+  prod_new_release_dir: "$prod_releases_dir/$prod_release"
+
+pull_preflight:
+  stage: development
+  variables: 
+    branch: "preflight"
+  only: 
+    - preflight
+  script:
+    - "cd $project_path/$project_name"
+    - git checkout .
+    - "git pull origin $branch"
+  tags:
+    - preflight
+    - tanganpengharapan
+    - website
+
+composer:
+  stage: development
+  only:
+    - preflight
+  script:
+    - "cd $project_path/$project_name"
+    - composer install
+  tags:
+    - preflight
+    - tanganpengharapan
+    - website
+
+migrate_database:
+  stage: development
+  only:
+    - preflight
+  script:
+    - "cd $project_path/$project_name"
+    - composer dump-autoload
+    - php artisan migrate
+  tags:
+    - preflight
+    - tanganpengharapan
+    - website
+
+clone_repository_prod:
+  stage: production
+  only:
+    - master
+  script:
+    - "cd $prod_releases_dir"
+    - "git clone --depth 1 $prod_repository $prod_new_release_dir"
+  tags:
+    - production
+    - tanganpengharapan
+    - website
+
+run_composer_prod:
+  stage: production
+  only:
+    - master
+  script:
+    - "cd $prod_new_release_dir"
+    - composer install --prefer-dist --no-scripts -q -o
+  tags:
+    - production
+    - tanganpengharapan
+    - website
+
+update_symlinks_prod:
+  stage: production
+  only:
+    - master
+  script:
+    - "rm -rf $prod_new_release_dir/storage"
+    - "ln -nfs $prod_app_dir/storage $prod_new_release_dir/storage"
+  tags:
+    - production
+    - tanganpengharapan
+    - website
+
+linking_env_file_prod:
+  stage: production
+  only:
+    - master
+  script:
+    - "ln -nfs $prod_app_dir/.env $prod_new_release_dir/.env"
+  tags:
+    - production
+    - tanganpengharapan
+    - website
+
+linking_current release_prod:
+  stage: production
+  only:
+    - master
+  script:
+    - "ln -nfs $prod_new_release_dir $prod_app_dir/current"
+  tags:
+    - production
+    - tanganpengharapan
+    - website

@@ -1,0 +1,11 @@
++--------+----------+--------------------------+---------------+------------------------------------------------------------------+--------------+
+| Domain | Method   | URI                      | Name          | Action                                                           | Middleware   |
++--------+----------+--------------------------+---------------+------------------------------------------------------------------+--------------+
+|        | GET|HEAD | /                        | home          | App\Http\Controllers\GeneralController@home                      | web          |
+|        | POST     | api/payment/notification |               | App\Http\Controllers\Api\MidtransResponseController@notification | api          |
+|        | GET|HEAD | api/user                 |               | Closure                                                          | api,auth:api |
+|        | GET|HEAD | donation                 | donation.view | App\Http\Controllers\GeneralController@donationView              | web          |
+|        | GET|HEAD | donation/error           |               | App\Http\Controllers\Payment\PaymentController@finish            | web          |
+|        | GET|HEAD | donation/finish          |               | App\Http\Controllers\Payment\PaymentController@finish            | web          |
+|        | POST     | donation/get-token       | get_token     | App\Http\Controllers\Payment\MidtransController@donate           | web          |
++--------+----------+--------------------------+---------------+------------------------------------------------------------------+--------------+
