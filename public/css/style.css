@@ -1167,7 +1167,7 @@ color: black;
 
 .causes_slider .owl-dots {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
 .causes_slider .owl-dots .owl-dot {
@@ -2131,7 +2131,7 @@ color: black;
 ============================================================================================ */
 .event_slider .owl-dots {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 0px;
 }
 
 .event_slider .owl-dots .owl-dot {
@@ -2316,7 +2316,7 @@ color: black;
 
 .event_slider .owl-dots {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 0px;
 }
 
 .event_slider .owl-dots .owl-dot {
