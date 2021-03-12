@@ -11,10 +11,6 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('home');
-// });
-
 Route::get('/', 'GeneralController@home')->name('home');
 Route::get('gallery', 'GeneralController@gallery')->name('gallery');
 Route::get('bulletin', 'GeneralController@bulletin')->name('bulletin');

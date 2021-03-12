@@ -8,6 +8,7 @@ use DonationLib;
 use UploadImageLib;
 use Carbon\Carbon;
 use App\Models\CharityCategory;
+use App\Models\Bulletin;
 use App\Http\Helpers\Helper;
 use Illuminate\Http\Request;
 use Vinkla\Instagram\Instagram;
@@ -42,7 +43,8 @@ class GeneralController extends Controller
   }
 
   public function bulletin(){
-    return view('bulletin');
+    $data['bulletin'] = Bulletin::where('active','1')->get();
+    return view('bulletin', $data);
   }
 
   public function termsConditionsView(){

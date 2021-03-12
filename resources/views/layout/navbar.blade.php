@@ -39,7 +39,7 @@
                     <ul class="nav navbar-nav menu_nav ml-auto">
                         <li class="nav-item active"><a class="nav-link" href="{{ route('home') }}">Home</a></li> 
                         <li class="nav-item"><a class="nav-link" href="{{ route('gallery') }}">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('bulletin') }}">Betterlife</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('bulletin') }}">Bulletin</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('donation.view') }}">Donation</a></li>
                     </ul>
                 </div> 
