@@ -9,6 +9,7 @@ use UploadImageLib;
 use Carbon\Carbon;
 use App\Models\CharityCategory;
 use App\Models\Bulletin;
+use App\Models\Program;
 use App\Http\Helpers\Helper;
 use Illuminate\Http\Request;
 use Vinkla\Instagram\Instagram;
@@ -19,15 +20,8 @@ use Illuminate\Support\Facades\Validator;
 class GeneralController extends Controller
 {
   public function home(Request $request){
-    // $instagramPositive = new Instagram(env('TOKEN_IG_POSITIVE'));
-    // $feedsPositive = $instagramPositive->media();
-
-    // $a = feed();
-    // dd($request);
-
-    // return view('home', compact('feeds', 'feedsPositive'));
-    // return view('home', compact('a'));
-    return view('home');
+    $data['program'] = program::where('active','1')->get();
+    return view('home',$data);
   }
 
   public function donationView(){
@@ -37,8 +31,6 @@ class GeneralController extends Controller
   }
 
   public function gallery(){
-    // $instagram = new Instagram(env('TOKEN_IG'));
-    // $feeds = $instagram->media();
     return view('gallery');
   }
 
