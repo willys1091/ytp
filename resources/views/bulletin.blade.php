@@ -16,7 +16,7 @@
              @foreach($bulletin as $b)
                 <div class="col-md-4 col-sm-6 gallery_item">
                     <div class="gallery_img">
-                        <img src="http://doc.ytp.test/img/buletin/{{$b->img}}" alt="">
+                        <img src="{{Session('docs')}}/img/buletin/{{$b->img}}" alt="">
                         <div class="hover">
                             <a target="_blank" href="{{$b->url}}"><i class="fa fa-link"></i></a>
                         </div>

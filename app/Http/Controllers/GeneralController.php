@@ -10,6 +10,7 @@ use Carbon\Carbon;
 use App\Models\CharityCategory;
 use App\Models\Bulletin;
 use App\Models\Program;
+use App\Models\Settings;
 use App\Http\Helpers\Helper;
 use Illuminate\Http\Request;
 use Vinkla\Instagram\Instagram;
@@ -19,6 +20,10 @@ use Illuminate\Support\Facades\Validator;
 
 class GeneralController extends Controller
 {
+  public function __construct()
+    {
+      Session::put('docs',Settings::where('name','docs')->value('value'));
+    }
   public function home(Request $request){
     $data['program'] = program::where('active','1')->get();
     return view('home',$data);
