@@ -36,11 +36,12 @@
                 </button>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+			
                     <ul class="nav navbar-nav menu_nav ml-auto">
-                        <li class="nav-item active"><a class="nav-link" href="{{ route('home') }}">Home</a></li> 
-                        <li class="nav-item"><a class="nav-link" href="{{ route('gallery') }}">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('bulletin') }}">Bulletin</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('donation.view') }}">Donation</a></li>
+                        <li class="nav-item {{Request::segment(1)==''?"active":""}}"><a class="nav-link" href="{{ route('home') }}">Home</a></li> 
+                        <li class="nav-item {{Request::segment(1)=='gallery'?"active":""}}"><a class="nav-link" href="{{ route('gallery') }}">Gallery</a></li>
+                        <li class="nav-item {{Request::segment(1)=='bulletin'?"active":""}}"><a class="nav-link" href="{{ route('bulletin') }}">Bulletin</a></li>
+                        <li class="nav-item {{Request::segment(1)=='donation'?"active":""}}"><a class="nav-link" href="{{ route('donation.view') }}">Donation</a></li>
                     </ul>
                 </div> 
             </div>

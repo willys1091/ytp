@@ -71,7 +71,7 @@
                 loop:true,
                 margin: 45,
                 items: 2,
-                nav: false, 
+                nav: false,
                 autoplay: false,
                 smartSpeed: 1500,
                 dots:true, 
@@ -92,8 +92,6 @@
                 }
             })
         }
-        $( ".owl-prev").html('<i class="fa fa-arrow-left"></i>');
-        $( ".owl-next").html('<i class="fa fa-arrow-right"></i>');
     }
     event_slider();
 	
@@ -148,8 +146,6 @@
                 }
             })
         }
-        $( ".owl-prev").html('<i class="fa fa-arrow-left"></i>');
-        $( ".owl-next").html('<i class="fa fa-arrow-right"></i>');
     }
     event_slider();
 	
@@ -198,7 +194,7 @@
                 nav: true,
                 autoplay: true,
                 smartSpeed: 1500,
-                dots: false, 
+                dots: true, 
                 responsiveClass: true,
                 responsive: {
                     0: {

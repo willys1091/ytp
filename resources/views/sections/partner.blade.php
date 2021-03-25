@@ -2,10 +2,8 @@
 <section class="clients_logo_area">
     <div class="container">
         <div class="clients_slider owl-carousel">
-            @for ($i = 1; $i < 26; $i++)
-                <div class="item">
-                    <img src="/img/client/a{{$i}}.png" alt="Clients">
-                </div>
+            @for ($i = 1; $i < 17; $i++)
+                <div class="item"><img src="/img/client/{{$i}}.png" alt="Clients{{$i}}" width="200px"></div>
             @endfor
         </div>
     </div>

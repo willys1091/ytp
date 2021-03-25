@@ -98,6 +98,11 @@ button:focus {
   padding-bottom: 120px;
 }
 
+.p_20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .mt-25 {
   margin-top: 25px;
 }
@@ -482,7 +487,7 @@ button:focus {
 }
 
 .home_banner_area .banner_inner .overlay {
-  background: url(../img/banner/home-banner.jpg) no-repeat scroll center center;
+  background: url(../img/banner/home-banner.jpg) no-repeat scroll center center / 100% auto;
   /* background: url(../img/who/who-1.jpg) no-repeat scroll center center; */
   position: absolute;
   left: 0;
@@ -616,7 +621,7 @@ button:focus {
 .banner_area .banner_inner .overlay {
   /* background: url(../img/banner/banner.jpg) no-repeat scroll center center; */
   /* background: url(../img/who/who-1.jpg) no-repeat scroll center center; */
-  background: url(../img/background/background.jpg) no-repeat scroll center center;
+  background: url(../img/background/YTP-BACKGROUND-min.jpg) no-repeat scroll center center;
   position: absolute;
   left: 0;
   right: 0;
@@ -1167,7 +1172,7 @@ color: black;
 
 .causes_slider .owl-dots {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 80px;
 }
 
 .causes_slider .owl-dots .owl-dot {
@@ -2131,7 +2136,7 @@ color: black;
 ============================================================================================ */
 .event_slider .owl-dots {
   text-align: center;
-  margin-top: 0px;
+  margin-top: 80px;
 }
 
 .event_slider .owl-dots .owl-dot {
@@ -2255,6 +2260,22 @@ color: black;
   background: #f9f9ff;
 }
 
+.putih{
+    color: #fff;
+}
+
+.flc.overlay {
+  background: url(../img/background/YTP-BACKGROUND-min.jpg) no-repeat scroll center center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 125%;
+  bottom: 0;
+  z-index: -1;
+  opacity: .25;
+}
+
 .testimonials_inner .testi_left_text {
   max-width: 320px;
   margin-top: 105px;
@@ -2316,7 +2337,7 @@ color: black;
 
 .event_slider .owl-dots {
   text-align: center;
-  margin-top: 0px;
+  margin-top: 80px;
 }
 
 .event_slider .owl-dots .owl-dot {
