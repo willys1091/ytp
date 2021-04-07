@@ -10,6 +10,9 @@ use Carbon\Carbon;
 use App\Models\CharityCategory;
 use App\Models\Bulletin;
 use App\Models\Program;
+use App\Models\Event;
+use App\Models\Flc;
+use App\Models\About;
 use App\Models\Settings;
 use App\Http\Helpers\Helper;
 use Illuminate\Http\Request;
@@ -25,7 +28,10 @@ class GeneralController extends Controller
       Session::put('docs',Settings::where('name','docs')->value('value'));
     }
   public function home(Request $request){
-    $data['program'] = program::where('active','1')->get();
+    $data['event'] = Event::where('active','1')->get();
+    $data['program'] = Program::where('active','1')->get();
+    $data['flc'] = Flc::where('active','1')->get();
+    $data['about'] = About::where('active','1')->get();
     return view('home',$data);
   }
 

@@ -20,9 +20,11 @@
 			<div class="col-lg-6">
 				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 					<div class="carousel-inner">
-				  		<div class="carousel-item active"><img src="img/flc/f6.jpg" alt="" class="d-block w-100"></div>
-				  		<div class="carousel-item"><img src="img/flc/f7.jpg" alt="" class="d-block w-100"></div>
-				 	 	<div class="carousel-item"><img src="img/flc/f8.jpg" alt="" class="d-block w-100"></div>
+						@php $x = 1 @endphp
+						@foreach($flc as $f)
+							<div class="carousel-item {{$x=='1'?'active':''}}"><img src="{{Session('docs')}}/img/flc/{{$f->img}}" alt="" class="d-block w-100"></div>
+							@php $x++ @endphp
+						@endforeach
 					</div>
 					<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 					<span class="fa fa-chevron-left fa-2x" style="color: #fff;" aria-hidden="true"></span><span class="sr-only">Previous</span>
@@ -32,15 +34,6 @@
 					</a>
 			  	</div>
 			</div>
-			{{-- <div class="col-lg-6">
-				<div class="event_slider owl-carousel">
-					<div class="item"><div class="event_item"><img src="img/flc/f6.jpg" alt=""></div></div>
-					<div class="item"><div class="event_item"><img src="img/flc/f7.jpg" alt=""></div></div>
-					<div class="item"><div class="event_item"><img src="img/flc/f8.jpg" alt=""></div></div>
-					<div class="item"><div class="event_item"><img src="img/flc/f9.jpg" alt=""></div></div>
-					<div class="item"><div class="event_item"><img src="img/flc/f10.JPG" alt=""></div></div>
-				</div>
-			</div> --}}
 		</div>
 	</div>
 </section>

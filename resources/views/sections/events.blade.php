@@ -69,15 +69,12 @@
 			<div class="col-lg-6">
 				<div id="event" class="carousel slide" data-ride="carousel">
 					<div class="carousel-inner">
-						<div class="carousel-item active"><img src="img/event/8.png" alt="" class="d-block w-100"></div>
-						<div class="carousel-item"><img src="img/event/9.png" alt="" class="d-block w-100"></div>
-						<div class="carousel-item"><img src="img/event/10.png" alt="" class="d-block w-100"></div>
-						<div class="carousel-item"><img src="img/event/11.png" alt="" class="d-block w-100"></div>
-						<div class="carousel-item"><img src="img/event/12.png" alt="" class="d-block w-100"></div>
-						<div class="carousel-item"><img src="img/event/13.png" alt="" class="d-block w-100"></div>
-						<div class="carousel-item"><img src="img/event/14.png" alt="" class="d-block w-100"></div>
-						<div class="carousel-item"><img src="img/event/15.png" alt="" class="d-block w-100"></div>
-						<div class="carousel-item"><img src="img/event/16.png" alt="" class="d-block w-100"></div>
+
+						@php $y = 1 @endphp
+						@foreach($event as $e)
+						<div class="carousel-item {{$y=='1'?'active':''}}"><img src="{{Session('docs')}}/img/event/{{$e->img}}" alt="" class="d-block w-100"></div>
+							@php $y++ @endphp
+						@endforeach
 					</div>
 					<a class="carousel-control-prev" href="#event" role="button" data-slide="prev">
 						<span class="fa fa-chevron-left fa-2x" style="color: #000;" aria-hidden="true"></span>
