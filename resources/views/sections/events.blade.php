@@ -77,12 +77,10 @@
 						@endforeach
 					</div>
 					<a class="carousel-control-prev" href="#event" role="button" data-slide="prev">
-						<span class="fa fa-chevron-left fa-2x" style="color: #000;" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
+						<span class="fa fa-chevron-left fa-2x" style="color: #000;" aria-hidden="true"></span><span class="sr-only">Previous</span>
 					</a>
 					<a class="carousel-control-next" href="#event" role="button" data-slide="next">
-						<span class="fa fa-chevron-right fa-2x" style="color: #000;" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
+						<span class="fa fa-chevron-right fa-2x" style="color: #000;" aria-hidden="true"></span><span class="sr-only">Next</span>
 					</a>
 				</div>
 			</div>

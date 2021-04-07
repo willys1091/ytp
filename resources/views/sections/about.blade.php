@@ -13,7 +13,7 @@
 				</p>
                 <div class="home owl-carousel">
                     @foreach($about as $a)
-                    <div class="item"><img src="{{Session('docs')}}/img/about/{{$a->img}}" alt=""></div>
+                        <div class="item"><img src="{{Session('docs')}}/img/about/{{$a->img}}" alt=""></div>
                     @endforeach
                 </div>
             </div>

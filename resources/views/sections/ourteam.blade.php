@@ -1,4 +1,3 @@
-<!--================Feature Area =================-->
 <section class="feature_area p_120">
     <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
     <div class="container">
@@ -10,4 +9,3 @@
         </div>
     </div>
 </section>
-<!--================End Feature Area =================-->
