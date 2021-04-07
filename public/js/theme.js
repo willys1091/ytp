@@ -42,9 +42,9 @@
                 margin: 30,
                 items: 3,
                 nav: false,
-                autoplay: false,
-                smartSpeed: 1500,
-                dots:true, 
+                autoplay: true,
+                smartSpeed: 2000,
+                dots:false, 
                 responsiveClass: true,
                 responsive: {
                     0: {
@@ -159,8 +159,8 @@
                 margin: 30,
                 items: 5,
                 nav: false,
-                autoplay: false,
-                smartSpeed: 1500,
+                autoplay: true,
+                smartSpeed: 1000,
                 dots:false, 
                 responsiveClass: true,
                 responsive: {
@@ -194,7 +194,7 @@
                 nav: true,
                 autoplay: true,
                 smartSpeed: 1500,
-                dots: true, 
+                dots: false, 
                 responsiveClass: true,
                 responsive: {
                     0: {

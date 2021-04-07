@@ -5,6 +5,7 @@
     <meta name="description" content="">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="keywords" content="Charity,Donation,Donasi,Non-Profit,Yayasan,Pengharapan,Tangan,Pendidikan">
+    <meta name="author" content="Tangan Pengharapan (W)">
     <meta name="HandheldFriendly" content="true" />
     <meta name="google-site-verification" content="wjckL_jYqSFyPC6Dv0tfAe7kg9Pmp__7EQLuyZU4L-s" />
     {{-- <link rel="icon" href="/img/favicon.png" type="image/png"> --}}

@@ -5553,10 +5553,12 @@ button.close {
 
 .carousel-control-prev {
   left: 0;
+  margin-left: -10%; color: black;
 }
 
 .carousel-control-next {
   right: 0;
+  margin-right: -10%; color: black;
 }
 
 .carousel-control-prev-icon,
