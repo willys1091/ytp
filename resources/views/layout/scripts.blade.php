@@ -2,25 +2,23 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="/js/jquery-3.2.1.min.js"></script>
-<script src="/js/popper.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/stellar.js"></script>
-<script src="/vendors/lightbox/simpleLightbox.min.js"></script>
-<script src="/vendors/nice-select/js/jquery.nice-select.min.js"></script>
-<script src="/vendors/isotope/imagesloaded.pkgd.min.js"></script>
-<script src="/vendors/isotope/isotope-min.js"></script>
-<script src="/vendors/owl-carousel/owl.carousel.min.js"></script>
-<script src="/js/jquery.ajaxchimp.min.js"></script>
-<script src="/js/mail-script.js"></script>
-<!-- contact js -->
-<script src="/js/jquery.form.js"></script>
-<script src="/js/jquery.validate.min.js"></script>
-<script src="/js/contact.js"></script>
-<!--gmaps Js-->
+<script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
+<script src="{{asset('js/popper.js')}}"></script>
+<script src="{{asset('js/bootstrap.min.js')}}"></script>
+<script src="{{asset('js/stellar.js')}}"></script>
+<script src="{{asset('vendors/lightbox/simpleLightbox.min.js')}}"></script>
+<script src="{{asset('vendors/nice-select/js/jquery.nice-select.min.js')}}"></script>
+<script src="{{asset('vendors/isotope/imagesloaded.pkgd.min.js')}}"></script>
+<script src="{{asset('vendors/isotope/isotope-min.js')}}"></script>
+<script src="{{asset('vendors/owl-carousel/owl.carousel.min.js')}}"></script>
+<script src="{{asset('js/jquery.ajaxchimp.min.js')}}"></script>
+<script src="{{asset('js/mail-script.js')}}"></script>
+<script src="{{asset('js/jquery.form.js')}}"></script>
+<script src="{{asset('js/jquery.validate.min.js')}}"></script>
+<script src="{{asset('js/contact.js')}}"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-<script src="/js/gmaps.min.js"></script>
-<script src="/js/theme.js"></script>
+<script src="{{asset('js/gmaps.min.js')}}"></script>
+<script src="{{asset('js/theme.js')}}"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140870891-1"></script>

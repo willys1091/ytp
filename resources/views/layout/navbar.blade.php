@@ -1,6 +1,4 @@
-<!--================Header Menu Area =================-->
 <header class="header_area">
-
     <div class="top_menu row m0">
         <div class="container">
             <div class="float-left">
@@ -47,6 +45,4 @@
             </div>
         </nav>
     </div>
-    
 </header>
-<!--================Header Menu Area =================-->
