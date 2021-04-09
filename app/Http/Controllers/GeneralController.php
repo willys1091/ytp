@@ -36,8 +36,7 @@ class GeneralController extends Controller
   }
 
   public function donationView(){
-    $categories = CharityCategory::all();
-    
+    $categories = CharityCategory::where('active','1')->get();
     return view('donation', compact('categories'));
   }
 

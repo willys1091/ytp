@@ -11,42 +11,27 @@
 				{{-- @endfor --}}
 				{{-- </div> --}}
 				<div class="welcome_img"><img class="img-fluid" src="/img/YTP_QR.jpeg" alt=""></div>
-				<div class="welcome_img"><img class="img-fluid" src="/img/event/1.jpg" alt=""></div>
+				<div class="welcome_img"><img class="img-fluid" src="/img/1.jpg" alt=""></div>
 			</div>
 			<div class="col-lg-6">
 				<div class="testi_left_text_events no-margin-top"><h4>#PEDULI SESAMA</h4>
 					<p>
-  						Covid-19 membawa dampak yang cukup besar bagi segala aspek kehidupan masyarakat di Indonesia. Khususnya para Tenaga Medis yang rawan terpapar virus, namun harus berada di garda depan untuk menangani para korban.
-  						<br>
-						Tangan Pengharapan akan memberikan bantuan masker, hand sanitiser, dan sabun cuci tangan untuk para tenaga medis di beberapa Rumah Sakit di Kalimantan Barat, Sumba Barat, Merauke, dan Timor, NTT.
-						<br>
-						Untuk itu kami mengajak Anda untuk bergerak dan #pedulisesama dengan berdonasi melalui Tangan Pengharapan
-						<br><br>
-  						<b>OPEN DONATION</b>
- 	 					<br><br>
-  						Anda dapat kirimkan donasi ke rekening:
-  						<br>
-  						A.N Yayasan Tangan Pengharapan
-  						<br>
-  						BCA 0653090096
-  						<br>
- 	 					BNI 0309009606
-  						<br>
-  						MANDIRI 1250011260924
-  						<br>
-  						BRI 0540 01 000397 30 8
-  						<br><br>
-  						Di Australia:
-  						<br>
-						Commonwealth Bank of Australia 
-						<br>
-						062-401 1034 0658
-						<br>
-						Atas nama House of Blessing Australia Inc
-						<br><br>
+  						Covid-19 membawa dampak yang cukup besar bagi segala aspek kehidupan masyarakat di Indonesia. Khususnya para Tenaga Medis yang rawan terpapar virus, namun harus berada di garda depan untuk menangani para korban.<br>
+						Tangan Pengharapan akan memberikan bantuan masker, hand sanitiser, dan sabun cuci tangan untuk para tenaga medis di beberapa Rumah Sakit di Kalimantan Barat, Sumba Barat, Merauke, dan Timor, NTT.<br>
+						Untuk itu kami mengajak Anda untuk bergerak dan #pedulisesama dengan berdonasi melalui Tangan Pengharapan<br><br>
+  						<b>OPEN DONATION</b><br><br>
+  						Anda dapat kirimkan donasi ke rekening:<br>
+  						A.N Yayasan Tangan Pengharapan<br>
+  						BCA 0653090096<br>
+ 	 					BNI 0309009606<br>
+  						MANDIRI 1250011260924<br>
+  						BRI 0540 01 000397 30 8<br><br>
+  						Di Australia:<br>
+						Commonwealth Bank of Australia <br>
+						062-401 1034 0658<br>
+						Atas nama House of Blessing Australia Inc<br><br>
   						NB: tuliskan keterangan dalam transfer <b>"PEDULI SESAMA"</b> dan mohon konfirmasi bukti transfer ke call center kami agar kami juga dapat melaporkan pemberian donasi kepada Bapak/Ibu/Saudara. 
-  						<b><a href="https://api.whatsapp.com/send?phone=6281314333341" rel="noopener noreferrer" target="_blank">📞 (+62) 813 1433 3341 (WA dan telfon).</a></b>
-  						<br><br>
+  						<b><a href="https://api.whatsapp.com/send?phone=6281314333341" rel="noopener noreferrer" target="_blank">📞 (+62) 813 1433 3341 (WA dan telfon).</a></b><br><br>
   						#pedulisesama #indonesia #tanganpengharapan #helpingpeopleliveabetterlifeabetterlife #betterfuturegeneration #peduli #care #share
 					</p>
 				</div>

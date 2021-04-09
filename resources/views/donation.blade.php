@@ -1,67 +1,28 @@
 @extends('layout.public')
-
 @section('content')
-
-<!--================Home Banner Area =================-->
 <section class="banner_area">
     <div class="banner_inner d-flex align-items-center">
         <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
-        <div class="container">
-            <div class="banner_content text-center">
-                <h2>Donation</h2>
-            </div>
-        </div>
+        <div class="container"><div class="banner_content text-center"><h2>Donation</h2></div></div>
     </div>
 </section>
-<!--================End Home Banner Area =================-->
-
-<!--================Denation Area =================-->
 <section class="donation_f_area p_120">
     <div class="container">
         <div class="row donation_f_inner">
             <div class="col-lg-7">
-            {{-- <div class="col-lg-12"> --}}
                 <div class="dn_left_text">
                     <div class="dn_item">
-                        <h4>
-                            You can become our partners or foster parents to support children in need.
-                        </h4>
-                        <h4>
-                            Every donation given will be collected with the other donations from the other partners, then they will be distributed to YTP Centers in Indonesia.
-                        </h4>
-                        <h4>
-                            Tangan Pengharapan distributes your donation either in money or in kind to all YTP Centers in Indonesia.
-                        </h4>
-                        <h4>
-                            The usage of money and stuffs will be checked by Tangan Pengharapan Main Office’s accountants every month in order to make sure that they are properly used.
-                        </h4>
-                        <h4>
-                            Every month you will get a testimony video regarding the children joined in the YTP Centers. In addition, you will get our monthly bulletin reporting on children progress in the YTP Centers.
-                        </h4>
-                        <h5>
-                            Account Name : Yayasan Tangan Pengharapan
-                        </h5>
-                        <h5>
-                            BCA : 0653090096 – Kelapa Gading (Swift Code : CENAIDJA)
-                        </h5>
-                        <h5>
-                            BNI : 0309009606 – Kelapa Gading (Swift Code : BNINIDJAXXX)
-                        </h5>
-                        <h5>
-                            Mandiri : 1250011260924 – Kelapa Gading (Swift Code : BMRIIDJA)
-                        </h5>
-                        <h5>
-                            BRI : 0540 01 000397 308
-                        </h5>
-                        <h5>
-                            COMMONWEALTH BANK OF AUSTRALIA : 062-401 1034 0658 (A.N House of Blessing Australia Inc)
-                        </h5>
-                        {{-- <h5><a href="https://paypal.me/tanganpengharapanytp?locale.x=id_ID">DONATION WITH PAYPAL</a></h5> --}}
-
-                        {{-- <br><br>
-                        <h3 style="text-align: center">After you DONATE, please contact us for confirmation : 
-                            <a style="color: black" href="https://api.whatsapp.com/send?phone=6281314333341" rel="noopener noreferrer" target="_blank">(+62) 813 143 333 41</a>.
-                        </h3> --}}
+                        <h4>You can become our partners or foster parents to support children in need.</h4>
+                        <h4>Every donation given will be collected with the other donations from the other partners, then they will be distributed to YTP Centers in Indonesia.</h4>
+                        <h4>Tangan Pengharapan distributes your donation either in money or in kind to all YTP Centers in Indonesia.</h4>
+                        <h4>The usage of money and stuffs will be checked by Tangan Pengharapan Main Office’s accountants every month in order to make sure that they are properly used.</h4>
+                        <h4>Every month you will get a testimony video regarding the children joined in the YTP Centers. In addition, you will get our monthly bulletin reporting on children progress in the YTP Centers.</h4>
+                        <h5>Account Name : Yayasan Tangan Pengharapan</h5>
+                        <h5>BCA : 0653090096 – Kelapa Gading (Swift Code : CENAIDJA)</h5>
+                        <h5>BNI : 0309009606 – Kelapa Gading (Swift Code : BNINIDJAXXX)</h5>
+                        <h5>Mandiri : 1250011260924 – Kelapa Gading (Swift Code : BMRIIDJA)</h5>
+                        <h5>BRI : 0540 01 000397 308</h5>
+                        <h5>COMMONWEALTH BANK OF AUSTRALIA : 062-401 1034 0658 (A.N House of Blessing Australia Inc)</h5>
                     </div>
                 </div>
             </div>
@@ -70,6 +31,7 @@
                     <form class="donation_form row" action="#" method="post" id="contactForm" novalidate="novalidate">
                         <div class="form-group col-lg-12">
                             <img src="{{url('img/donation-ytp.jpg')}}" class="img-fluid" alt="Donation">
+                            <img src="{{url('img/visa.png')}}" class="img-fluid" alt="Visa" width="100px"><img src="{{url('img/mastercard.png')}}" class="img-fluid" alt="mastercard" width="100px">
                         </div>
                         <div class="form-group col-lg-12">
                             <select name="charity_category_id" class="donate_select">
@@ -96,7 +58,7 @@
                         </div>
                         <div class="form-group col-lg-12">
                             <input type="number" class="form-control" id="amount" name="donation_amount" placeholder="Donation Amount Min IDR 10.000" min="10000" autocomplete="off" value=10000>
-                            {{-- <span><p>Minimal Donation Amount IDR 10.000</p></span> --}}
+
                         </div>
                         <div class="form-group col-lg-12">
                             <textarea class="form-control" name="message" id="message" rows="1" placeholder="Message"></textarea>
@@ -107,17 +69,8 @@
                         </div>
                     </form>
                 </div>
-                {{-- <div class="dn_form_area">
-                    <div class="form-group">
-                        <button class="btn paypal_btn form-control"><a href="https://paypal.me/tanganpengharapanytp?locale.x=id_ID">DONATION WITH PAYPAL</a></button>
-                    </div>
-                </div> --}}
             </div>
         </div>
-        {{-- <div class="master_card">
-            <span>We Accept:</span>
-            <img src="img/master-card.png" alt="">
-        </div> --}}
     </div>
 </section>
 <!--================End Denation Area =================-->

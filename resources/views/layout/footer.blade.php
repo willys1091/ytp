@@ -3,9 +3,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-12 col-sm-12">
                 <div class="single-footer-widget">
-                    <h6 class="footer_title">
-                        {{-- <i class="lnr lnr-home"></i> --}}
-                    Address</h6>
+                    <h6 class="footer_title">Address</h6>
                     <h6>Jl. Simponi Mas V B8 No.1-3</h6>
                     <h6>Pegangsaan Dua, Kelapa Gading</h6>
                     <p>Jakarta Utara</p>
@@ -13,9 +11,7 @@
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12">
                 <div class="single-footer-widget">
-                    <h6 class="footer_title">
-                        {{-- <i class="lnr lnr-phone-handset"></i> --}}
-                    Phone Number</h6>
+                    <h6 class="footer_title">Phone Number</h6>
                     <h6><a href="callto:62214528511">(+6221) 452 8511</a></h6>
                     <h6><a href="https://api.whatsapp.com/send?phone=6281314333341" rel="noopener noreferrer" target="_blank">(+62) 813 143 333 41</a></h6>
                     <p>Monday to Friday 9am to 6pm</p>
@@ -23,11 +19,8 @@
             </div>							
             <div class="col-lg-4 col-md-12 col-sm-12">
                 <div class="single-footer-widget">
-                    <h6 class="footer_title">
-                        {{-- <i class="lnr lnr-envelope"></i> --}}
-                    Email</h6>
+                    <h6 class="footer_title">Email</h6>
                     <h6><a href="mailto:ytpindonesia@gmail.com" rel="noopener noreferrer" target="_blank">ytpindonesia@gmail.com</a></h6>
-                    {{-- <p>Send us your query anytime!</p> --}}
                 </div>
             </div>
         </div>
@@ -47,4 +40,3 @@
         </div>
     </div>
 </footer>
-<!--================ End footer Area  =================-->
