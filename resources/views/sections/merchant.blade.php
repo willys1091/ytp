@@ -3,17 +3,10 @@
         <div class="row testimonials_inner">
             <div class="col-lg-4">
                 <div class="testi_left_text no-margin-top">
-                    <h4>Positive By YTP</h4>
-                    <p>
-                        Ingin ikut ambil bagian dalam membangun bangsa Indonesia tapi tidak tahu kemana khususnya dibidang pendidikan dan memberi makanan bergizi untuk anak-anak di pelosok?
-                        Yuks sisihkan sedikit uang kita dengan membeli merchandise <a href="https://www.instagram.com/tangan_pengharapan/" style="color: #75CBD9; font-weight: bold;">TANGAN PENGHARAPAN</a>.
-                        Merchandise kami bisa dilihat di <a href="https://www.instagram.com/batiktanganpengharapan/" style="color: #75CBD9; font-weight: bold;">@batiktanganpengharapan</a> khusus batik, dan
-                        <a href="https://www.instagram.com/positive_by_ytp/" style="color: #75CBD9; font-weight: bold;">@positive_by_ytp</a> untuk kaos, dress, kaos lengan panjang, topi dan tas.
-                        Setiap penjualan 1 merchandise berarti anda membantu memberikan 7-10 piring makanan bergizi untuk 5100 anak-anak di pelosok Indonesia yang dibantu oleh TANGAN PENGHARAPAN 
-                        melalui program makanan bergizi dan pendidikan gratis di feeding and learning center TANGAN PENGHARAPAN yang tersebar di 70 titik di seluruh Indonesia!
-                        <br><br>
-                        Yuk beli merchandise <a href="https://www.instagram.com/tangan_pengharapan/" style="color: #75CBD9; font-weight: bold;">TANGAN PENGHARAPAN</a>. Untuk order kalian bisa Whatsapp kami di nomor <b><a href="https://api.whatsapp.com/send?phone=6281311005568&text=*FORMAT ORDER*%0ANama%20%3A%0AAlamat%20%3A%0AKel%20%3A%0AKec%20%3A%0AKota%20%3A%0AKode%20Pos%20%3A%0ANo%20Handphone%20%3A%0APesanan%20%3A%0A" rel="noopener noreferrer" target="_blank">(+62) 813 1100 5568.</a></b>
-                    </p>
+                    @foreach($postmerchant as $pm)
+                        <h4>{{$pm->title}}</h4>
+                        <p>{!! $pm->content !!}</p>
+                    @endforeach
                 </div>
             </div>
             <div class="col-lg-8">          
