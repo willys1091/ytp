@@ -13,7 +13,8 @@
                 <div class="col-md-4 col-sm-6 gallery_item">
                     <div class="gallery_img">
                         <img src="{{Session('docs')}}/img/buletin/{{$b->img}}" alt="">
-                        <div class="hover"><a target="_blank" href="{{Session('docs')}}/doc/buletin/{{$b->file}}"><i class="fa fa-link"></i></a></div>
+                        <div class="hover"><a target="_blank" href="{!! $b->url ?? Session('docs').'/doc/buletin/'.$b->file !!}"><i class="fa fa-link"></i></a></div>
+                       {{--<div class="hover"><a target="_blank" href="{{$b->url}}"><i class="fa fa-link"></i></a></div> --}}
                     </div>
                 </div>
              @endforeach
